@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DealFlow AI — Close More Clients Automatically</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --teal:#00b4a7;
+    --teal-2:#00d4ff;
+    --gold:#d4af37;
+    --ink:#0f172a;
+    --muted:#6b7280;
+    --bg:#ffffff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Arial;color:var(--ink);background:var(--bg)}
+  header{padding:80px 24px;text-align:center;background:linear-gradient(135deg,var(--teal-2),var(--teal));color:#fff;position:relative;overflow:hidden}
+  header .wrap{max-width:1100px;margin:0 auto}
+  .hero-img{width:220px;height:auto;filter: drop-shadow(0 12px 30px rgba(0,0,0,.25));}
+  h1{font-size:48px;margin:18px 0 8px}
+  h2{font-size:22px;font-weight:500;margin:0;color:#e9fffe}
+  p.lead{max-width:820px;margin:18px auto 0;font-size:18px;opacity:.95}
+  .cta-row{margin-top:28px;display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+  .btn{border:none;border-radius:28px;padding:14px 28px;font-weight:700;cursor:pointer}
+  .btn.primary{background:#111;color:#fff}
+  .btn.light{background:#fff;color:var(--ink)}
+  section{padding:64px 24px}
+  .container{max-width:1100px;margin:0 auto}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+  .card{background:#f7faf9;border-radius:16px;padding:22px;border:1px solid #e6f4f2}
+  .card h3{margin:0 0 8px;font-size:20px}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:22px}
+  .kpi{background:#0b2d2b;color:#c9fffb;border:1px solid #174e49;padding:16px;border-radius:14px;text-align:center}
+  .pricing .price-card{background:#fff;border:1px solid #e9ecef;border-radius:16px;padding:24px;text-align:center;box-shadow:0 8px 22px rgba(0,0,0,.06)}
+  .price{font-size:36px;font-weight:800;margin:8px 0 2px;color:var(--ink)}
+  .small{color:var(--muted);font-size:14px}
+  .buy{margin-top:14px;background:var(--teal);color:#fff;border:none;border-radius:26px;padding:12px 22px;font-weight:700;cursor:pointer}
+  footer{background:#0b1320;color:#cbd5e1;padding:36px;text-align:center}
+  .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg,var(--gold),#fffbe6);color:#111;border:1px solid #efdf9a;font-size:12px;font-weight:700}
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <img class="hero-img" src="assets/img/chichi.png" alt="ChiChi the Closer" />
+      <div class="badge">White‑Label & Resell Friendly</div>
+      <h1>DealFlow AI</h1>
+      <h2>Automate your leads, proposals, follow‑ups & commission tracking</h2>
+      <p class="lead">Built for consultants, closers & agencies aiming for $300K–$400K+ years — without compliance headaches. Promote it, use it, or resell it 100% under your brand.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#pricing">See Pricing</a>
+        <a class="btn light" href="#features">View Features</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="features">
+    <div class="container">
+      <h2 style="margin-top:0">Everything you need to close more deals</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Smart Lead Vault</h3>
+          <p>Capture prospects from forms, DMs or Calendly. Tag, score and filter in one place.</p>
+        </div>
+        <div class="card">
+          <h3>Proposal Builder</h3>
+          <p>Generate branded, sign‑ready proposals and retainers in minutes.</p>
+        </div>
+        <div class="card">
+          <h3>Follow‑Up AI</h3>
+          <p>Auto‑draft persuasive follow‑ups by tone: friendly, firm, or executive.</p>
+        </div>
+        <div class="card">
+          <h3>Commission Tracker</h3>
+          <p>Log deal value & commission %, then forecast monthly/annual take‑home.</p>
+        </div>
+        <div class="card">
+          <h3>Pipeline Dashboard</h3>
+          <p>Real‑time totals, win rate and revenue projection at a glance.</p>
+        </div>
+        <div class="card">
+          <h3>Resale Layer</h3>
+          <p>Sell licenses or white‑label accounts. Keep 100% of the revenue.</p>
+        </div>
+      </div>
+
+      <div class="kpis">
+        <div class="kpi"><strong>5‑Minute</strong><div>setup from GitHub Pages</div></div>
+        <div class="kpi"><strong>No Compliance</strong><div>no payments, medical or legal data</div></div>
+        <div class="kpi"><strong>GitHub‑Ready</strong><div>static hosting + optional Supabase</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <h2 style="text-align:center;margin:0 0 16px">Simple one‑time pricing</h2>
+      <p class="small" style="text-align:center;margin:0 0 28px">Replace links below with your Stripe checkout URLs.</p>
+      <div class="grid">
+        <div class="price-card">
+          <h3>Solo Plan</h3>
+          <div class="price">$49</div>
+          <p class="small">Lead Vault + Proposal Builder</p>
+          <a class="buy" href="https://buy.stripe.com/" target="_blank" rel="noopener">Buy $49</a>
+        </div>
+        <div class="price-card">
+          <h3>Pro Plan</h3>
+          <div class="price">$149</div>
+          <p class="small">Add Follow‑Up AI + Commission Tracker</p>
+          <a class="buy" href="https://buy.stripe.com/" target="_blank" rel="noopener">Buy $149</a>
+        </div>
+        <div class="price-card">
+          <h3>Agency License</h3>
+          <div class="price">$399</div>
+          <p class="small">Unlimited clients + Resell/White‑label</p>
+          <a class="buy" href="https://buy.stripe.com/" target="_blank" rel="noopener">Buy $399</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 DealFlow AI • ChiChi the Closer™ — Built for Tha DollHouse brands
+  </footer>
+</body>
+</html>
